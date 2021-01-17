@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.amirhusseinsoori.samplenavigation.fragment.HomeFragment"
+        android:label="home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.amirhusseinsoori.samplenavigation.fragment.LoginFragment"
+        android:label="login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.amirhusseinsoori.samplenavigation.fragment.WelcomeFragment"
+        android:label="{username}"
+        tools:layout="@layout/fragment_welcome">
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="password"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        tools:layout="@layout/fragment_settings"
+        android:name="com.amirhusseinsoori.samplenavigation.fragment.SettingsFragment"
+        android:label="setting" />
+    <fragment
+        android:id="@+id/termsFragment"
+        tools:layout="@layout/fragment_terms"
+        android:name="com.amirhusseinsoori.samplenavigation.fragment.TermsFragment"
+        android:label="TermsFragment" >
+
+    </fragment>
+    <action android:id="@+id/action_global_termsFragment" app:destination="@id/termsFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        tools:layout="@layout/fragment_search"
+        android:name="com.amirhusseinsoori.samplenavigation.fragment.SearchFragment"
+        android:label="Search" />
+</navigation>

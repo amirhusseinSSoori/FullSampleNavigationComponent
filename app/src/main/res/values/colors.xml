@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#03A9F4</color>
+    <color name="colorAccent">#f5bc47</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="replyBackground">#DADADA</color>
+    <color name="textColor">#1A1616</color>
+
+    <color name="introPage1">#F5BC47</color>
+    <color name="introPage2">#48C9A2</color>
+    <color name="introPage3">#37A5E2</color>
+    <color name="introPage4">#7E46CA</color>
+
+    <color name="blue">#007BC3</color>
+    <color name="blur_background">#CBCBCB</color>
+    <color name="blur_background_dark">#473D3D</color>
+    <color name="silver">#7A7A7A</color>
+    <color name="red">#C0392B</color>
+    <color name="warning">#FFBF00</color>
+    <color name="gray">#EEE</color>
+    <color name="light_gray">#F2F2F2</color>
+    <color name="dark_gray">#9E9E9E</color>
+    <color name="lineColor">#EEEEEE</color>
 </resources>
