@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id "androidx.navigation.safeargs.kotlin"
 }
 
 android {
@@ -42,4 +44,12 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+
+
+    // Navigation Components
+    def navigation_components = "2.3.2"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_components"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_components"
 }
